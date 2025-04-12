@@ -1,0 +1,18 @@
+html
+    >(head
+        >title{EML}
+        +base[href="./"]
+        +meta:vp)
+    +body
+        >.main.-main
+            >(~components/header;)
+            +(.content
+                >.title.-pad.-center{Emmet Markup Language}
+                +.subtitle.-pad.-center{Just one emmet abbreviation is all it takes to render them all.}
+                +.actions
+                    >.
+                    +(.github.-pad
+                        >a[href="https://github.com/ionvop/emmet-markup-language/"]
+                            >button.-button{Open on GitHub})
+                    +.)
+            +(~components/footer;)
