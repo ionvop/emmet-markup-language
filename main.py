@@ -47,7 +47,6 @@ def index(path: str) -> str:
         document.body.append(script_tag)
 
     output = document.prettify()
-    open("output.html", "w").write(output)
     return output
 
 
