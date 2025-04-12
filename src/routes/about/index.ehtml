@@ -1,0 +1,61 @@
+html
+    >(head
+        >title{EML}
+        +base[href="../"]
+        +meta:vp)
+    +body
+        >.main.-main
+            >(~components/header;)
+            +(.content
+                >.title.-pad.-center{About}
+                +(.intro.section
+                    >.title.-pad.-title{What is EML}
+                    +.text.-pad{
+                        Emmet Markup Language (EML) is a made-for-fun, esoteric HTML+CSS generator built on top of Emmet.
+                        <br>
+                        It uses ".ehtml" and ".ecss" files to express entire web layouts in a compact, expressive, Emmet-style syntax - now with support for multiline markup, modular components, and automatic script/style inclusion.
+                        <br>
+                        This project is not meant for production use.
+                        <br>
+                        It's an experimental playground for compressed, recursive web layout ideas - kind of like if Emmet evolved into its own language.
+                    })
+                +(.features.section
+                    >.title.-pad.-title{Features}
+                    +.text.-pad{
+                        - Multiline Emmet syntax is supported and flattened before expansion.
+
+                        - "~path/to/file;" embeds another ".ehtml" file inline (component-style).
+                        <br>
+                        - Transpiles into full HTML via the Emmet parser + BeautifulSoup.
+                        <br>
+                        - A shorthand CSS syntax similar to Emmet.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Abbreviated CSS properties (e.g. "pt", "fz", "fw", "d", etc.).
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Use "_" prefix for raw/unparseable CSS values.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Automatically scoped per route and injected into the output.
+                    })
+                +(.html.section
+                    >.title.-pad.-title{HTML}
+                    +.code.-pad
+                        >.box.-pad{
+                            &lt;element class="class1 class2" id="id" attribute="value"&gt;<br>
+                            <span style="visibility: hidden;">----</span>&lt;div class="content"&gt;<br>
+                            <span style="visibility: hidden;">--------</span>Content<br>
+                            <span style="visibility: hidden;">----</span>&lt;/div&gt;<br>
+                            &lt;/element&gt;<br>
+                        }
+                        +.)
+                +(.eml.section
+                    >.title.-pad.-title{EML}
+                    +.code.-pad
+                        >.box.-pad{
+                            element.class1.class2#id[attribute="value"]<br>
+                            <span style="visibility: hidden;">----</span>&gt;.content{Content}
+                        }
+                        +.)
+                +.why.section
+                    >.title.-pad.-title{Why?}
+                    +.text.-pad{because why not?})
+            +(~components/footer;)
