@@ -1,0 +1,22 @@
+body > .main {
+    & > .content {
+        p:5rem;
+
+        .title {
+            fz:2rem;
+            fw:b;
+        }
+        
+        .contact {
+            d:g;
+            _grid-template-columns: 1fr 2fr 1fr;
+        
+            & > .form {
+                & > .subject {
+                    d:g;
+                    _grid-template-columns: max-content 1fr;
+                }
+            }
+        }
+    }
+}
