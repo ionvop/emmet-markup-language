@@ -1,0 +1,117 @@
+:root {
+    --theme: #777;
+    --theme__light: #aaa;
+    --theme__dark: #333;
+}
+
+body {
+    m:0rem;
+    p:0rem;
+    bgc:#111;
+    c:#fff;
+    ff:ss;
+}
+
+.-a {
+    d:b;
+    c:inherit;
+    td:n;
+}
+
+.-form {
+    _margin-block-end:0rem;
+}
+
+.-input {
+    w:100%;
+    p:1rem;
+    bgc:#fff;
+    c:#000;
+    fz:1rem;
+    bd:n;
+    bdrs:1rem;
+}
+    
+.-textarea {
+    w:100%;
+    h:10rem;
+    p:1rem;
+    bgc:#fff;
+    c:#000;
+    fz:1rem;
+    bd:n;
+    bdrs:1rem;
+    rsz:v;
+}
+
+.-button {
+    p:1rem;
+    bgc:var(--theme);
+    c:#fff;
+    fz:1rem;
+    bd:n;
+    bdrs:1rem;
+    cur:p;
+}
+
+.-button:hover {
+    bgc:#fff;
+    c:var(--theme);
+}
+
+.-center {
+    ta:c;
+}
+
+.-center__flex {
+    d:f;
+    jc:c;
+    ai:c;
+}
+
+.-pad {
+    p:1rem;
+}
+
+.-title {
+    fz:1.5rem;
+    fw:b;
+}
+
+.-main {
+    d:g;
+    _grid-template-rows: max-content 1fr max-content;
+    mih:100%;
+}
+
+.-header {
+    d:g;
+    _grid-template-columns: max-content 1fr repeat(3, max-content);
+    bgc:var(--theme);
+
+    & > .title {
+        p:1rem;
+    }
+
+    & > .tab {
+        p:1rem;
+
+        &:hover {
+            bgc:var(--theme__light);
+        }
+    }
+}
+
+.-footer {
+    d:g;
+    _grid-template-columns: max-content 1fr repeat(4, max-content);
+    bgc:var(--theme__dark);
+
+    & > .title {
+        p:1rem;
+    }
+
+    & > .tab {
+        p:1rem;
+    }
+}
