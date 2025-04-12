@@ -1,0 +1,23 @@
+html
+    >(head
+        >title{EML}
+        +base[href="../"]
+        +meta:vp)
+    +body
+        >div.main.-main
+            >(~components/header;)
+            +(div.content
+                >div.title.-pad.-center{Contact}
+                +div.contact
+                    >div
+                    +form.-form.form[action="ionvop@gmail.com"]
+                        >(div.subject
+                            >div.label.-pad.-center__flex{Subject}
+                            +div.input.-pad.-center__flex
+                                >input.-input[name="subject"])
+                        +div.label.-pad{Message}
+                        +(div.input.-pad
+                            >textarea.-textarea[name="body"])
+                        +div.submit.-pad.-center
+                            >button.-button{Send})
+            +(~components/footer;)
