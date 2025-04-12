@@ -1,0 +1,7 @@
+.-footer
+    >.title{&copy; 2025 ionvop}
+    +.
+    +a.-a.home.tab[href="./"]{Home}
+    +a.-a.about.tab[href="about/"]{About}
+    +a.-a.contact.tab[href="contact/"]{Contact}
+    +a.-a.github.tab[href="https://github.com/ionvop/emmet-markup-language/"]{GitHub}
