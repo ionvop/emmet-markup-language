@@ -1,0 +1,28 @@
+body > .main {
+    & > .content {
+        p:5rem;
+
+        & > .title {
+            fz:2rem;
+            fw:b;
+        }
+
+        & > .section {
+            pt:5rem;
+
+            & > .text {
+                whs:pl;
+            }
+
+            & > .code {
+                d:g;
+                _grid-template-columns: max-content 1fr;
+
+                & > .box {
+                    bgc:#000;
+                    ff:m;
+                }
+            }
+        }
+    }
+}
